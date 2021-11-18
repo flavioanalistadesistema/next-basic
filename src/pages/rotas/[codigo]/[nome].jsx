@@ -1,4 +1,5 @@
 import { useRouter } from "next/router"
+import Link from "next/link"
 
 export default function nome() {
     const router = useRouter();
@@ -8,6 +9,9 @@ export default function nome() {
     return (
         <div>
             <h1>rota / {cod} / {nome}</h1>
+            <Link href="/rotas">
+                <button>Voltar</button>
+            </Link>
         </div>
     )
 }
