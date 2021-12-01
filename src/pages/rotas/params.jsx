@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import Link from "next/link"
 
-export default function params() {
+export default function Params() {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const router = useRouter()
 
@@ -12,7 +12,9 @@ export default function params() {
         <div>
             <h1>Rotas Params: Name {name} e Id {id}</h1>
             <Link href="/rotas">
-            <button>Voltar</button>
+                <a>
+                    <button>Voltar</button>
+                </a>
             </Link>
         </div>
     )

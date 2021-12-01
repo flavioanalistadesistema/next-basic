@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 
-export default function questao() {
+export default function Questao() {
     let initialState = null
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [questao, setQuestao] = useState(initialState)

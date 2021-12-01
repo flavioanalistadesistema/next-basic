@@ -21,13 +21,13 @@ export default function rotas() {
         <div>
             <h1>Menu </h1>
             <div>
-                <Link href="/rotas/params?name=Flavio&id=123">
+                <Link href="/rotas/params?name=Flavio&id=123" passHref>
                     <li>Param</li>
                 </Link>
-                <Link href="/rotas/123/buscar">
+                <Link href="/rotas/123/buscar" passHref>
                     <li>Busca</li>
                 </Link>
-                <Link href="/rotas/123/Flavio">
+                <Link href="/rotas/123/Flavio" passHref>
                     <li>Flavio</li>
                 </Link>
             </div>
