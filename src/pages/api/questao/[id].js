@@ -1,5 +1,4 @@
 export default function questao(req, res) {
-    const id = req.query.id
 
     if (req.method === "GET") {
         get(req, res)

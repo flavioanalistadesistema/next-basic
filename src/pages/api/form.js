@@ -1,12 +1,11 @@
 const usuarios = []
 
 export default function form(req, res) {
-
-    if(req.method === "POST") {
+    if (req.method === "POST") {
         post(req, res)
-    }else if(req.method === "GET") {
+    } else if (req.method === "GET") {
         res.status(200).json(usuarios)
-    }else {
+    } else {
         res.status(405).send()
     }
 }
